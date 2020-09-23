@@ -1,0 +1,378 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 1000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .logo {
+    position: relative;
+    font-weight: 700;
+    color: #111111;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header .sticky {
+    padding: 5px 100px;
+    background: #111111;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #111;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+header ul li a:hover {
+    text-decoration: none;
+}
+
+
+.navbar {
+    position: fixed;
+}
+
+#brand {
+    font-family: 'Galada', cursive;
+    color: orange;
+}
+
+#slogan {
+    font-family: 'lobster', cursive;
+    color: limegreen;
+}
+
+#brand_slogan {
+    text-decoration: none;
+}
+
+.nav-link1 {
+    font-size: 1.25rem;
+}
+
+.nav-item {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top-writing {
+    margin-top: 40%;
+}
+
+.top-image {
+    margin-top: 30%;
+    margin-bottom: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 35rem;
+}
+
+.profile {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: 70px;
+}
+
+.buy-button {
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.feature {
+    margin: auto;
+    margin-bottom: 2rem;
+    text-align: center;
+    color: #28a745;
+}
+
+
+.section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #16384c;
+}
+
+.container2 {
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.container2 .card {
+    max-width: 300px;
+    height: 350px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out;
+
+}
+
+.container2 .card:hover {
+    height: 500px;
+}
+
+.container2 .card .imgBx {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    top: -60px;
+    left: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.container2 .card .imgBx img {
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+.container2 .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container2 .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.1s;
+}
+
+.container2 .card .addtocart {
+    position: relative;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+}
+
+.container2 .card:hover .addtocart {
+    margin-top: 6%;
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0.1s;
+    -webkit-transform: translate(22.5%, -60%);
+}
+
+.container2 .card .card-footer {
+    visibility: hidden;
+    width: 20rem;
+    position: relative;
+    left: -6%;
+    top: -5%;
+}
+
+.container2 .card:hover .card-footer {
+    visibility: visible;
+}
+
+
+
+Haml CSS JS Result EDIT ON *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.luminaire {
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 50px;
+    border-radius: 20%;
+    background-color: #000;
+    box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px #0ff;
+    transition: box-shadow 4s ease-out;
+    animation: spin 16s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.luminaire:hover {
+    cursor: pointer;
+}
+
+.luminaire::before,
+.luminaire::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(50% - 10px);
+    left: calc(50% - 10px);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0 0 40px 20px #fff, 0 0 100px 50px #ff0;
+    opacity: 0;
+    transition: opacity 8s, transform 8s;
+}
+
+.on {
+    background-color: #fff;
+    box-shadow: 0 0 80px 40px #fff, 0 0 200px 100px #f0f;
+}
+
+.on::before {
+    transform: translateX(-100px);
+    opacity: 1;
+}
+
+.on::after {
+    transform: translateX(100px);
+    opacity: 1;
+}
+
+.glowing {
+    margin-left: 6%;
+}
+
+.some-writing {
+    margin-left: 40%;
+    margin-top: 20%;
+}
+
+.title_talk {
+    color: #28a745;
+}
+
+.small-talk {
+    margin-top: 5%;
+}
+
+#pic {
+    max-width: auto;
+    max-height: 35rem;
+    align-items: center;
+    margin-left: 35%;
+    border-color: cyan;
+    border: .5rem solid #28a745;
+    padding: 1%;
+}
+
+.s_talks {
+    margin-top: 10%;
+}
+
+.learn-button {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.section2 {
+    margin-top: 10%;
+}
+
+.container3 {
+    margin-left: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 40rem;
+}
+
+.image_sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 1rem;
+    align-self: flex-end;
+}
+
+.catagories {
+    border: 3px solid limegreen;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 10rem;
+}
+
+.select-button {
+    margin-top: 2%;
+    margin-bottom: 10%;
+    border-radius: 25px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.wrapper {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    overflow-y: scroll;
+    position: relative;
+    height: 30rem;
+}
+
+button:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+}
+
+a:hover {
+    text-decoration: none;
+}
